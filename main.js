@@ -17,12 +17,15 @@ img.onload = function () {
 img.src = "space.png";
 
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight);
-camera.position.set(0,0,10)
+camera.position.set(0,0,5)
 
 const loader = new GLTFLoader();
 loader.load('earth2.glb', function(gltf) {scene.add(gltf.scene);})
 
 const controls = new OrbitControls( camera, renderer.domElement );
+controls.enablePan = false;
+controls.enableZoom = false;
+
 const light1 = new THREE.PointLight(0xffffff, 20, 100);
 light1.position.set( 50,30, 50);
 scene.add(light1);
