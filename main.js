@@ -14,7 +14,7 @@ img.onload = function () {
 	scene.background = new THREE.TextureLoader().load(img.src);
 	
 };
-img.src = "space.png";
+img.src = "space.jpg";
 
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight);
 camera.position.set(0,0,5)
@@ -25,6 +25,7 @@ loader.load('earth2.glb', function(gltf) {scene.add(gltf.scene);})
 const controls = new OrbitControls( camera, renderer.domElement );
 controls.enablePan = false;
 controls.enableZoom = false;
+controls.autoRotate = true;
 
 const light1 = new THREE.PointLight(0xffffff, 20, 100);
 light1.position.set( 50,30, 50);
