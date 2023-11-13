@@ -10,32 +10,14 @@ renderer.outputEnconding = THREE.sRGBEncoding;
 const scene = new THREE.Scene();
 
 
+var model = 'earth2.glb';
 
 
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight);
 camera.position.set(0,0,5)
 
-var loader = new THREE.Loader(); // Whichever ThreeJS loader you are using
-var modelPaths = ['./earth2.glb', './POLY.gbl']; // Array to store all model paths
-var currentPathIndex = 0; // index in the path array of the currently showing model
-var currentModel; // stores the model that is currently displaying
-loadModel(currentPathIndex);
-
-function loadModel(index){
-	if(currentModel){
-		scene.remove(currentModel); //remove the current model
-	}
-
-	loader.load(modelPaths[index], (result) => {
-		currentModel = result;
-		scene.add(result);
-	} );
-}
-
-function next(){
-  currentPathIndex ++;
-  loadModel(currentPathIndex);
-}
+const loader = new GLTFLoader();
+loader.load(model, function(gltf) {scene.add(gltf.scene);})
 
 const controls = new OrbitControls( camera, renderer.domElement );
 controls.enablePan = false;
