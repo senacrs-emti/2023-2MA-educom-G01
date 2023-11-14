@@ -17,7 +17,7 @@ const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerH
 camera.position.set(0,0,5)
 
 const loader = new GLTFLoader();
-loader.load(model, function(gltf) {scene.add(gltf.scene);})
+loader.load(model, function(gltf) {scene.add(gltf.scene);});
 
 const controls = new OrbitControls( camera, renderer.domElement );
 controls.enablePan = false;
@@ -45,17 +45,13 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-function checkmodel(){
-    if(slider.value ==  50){
-        model = 'earth2.glb';
-
-    } else {
-        model = '';
+slider.onmouseup = function() {
+    if(slider.value == 10){
+        scene.remove(loader);
+        model='POLY.glb';
+        loader.load(model, function(gltf) {scene.add(gltf.scene);});
+        console.log(model);
     }
-}
+  }
 
- const check = setInterval(checkmodel, 1);
-
-    if(slider.value = 60){
-        console.log(1);
-    }
+  mouseUp()
