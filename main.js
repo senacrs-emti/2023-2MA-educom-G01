@@ -19,7 +19,7 @@ space.encoding = THREE.sRGBEncoding;
 
 scene.background = space;
 
-var geometry = new THREE.SphereGeometry(1.4, 36, 15);
+var geometry = new THREE.SphereGeometry(1.2, 36, 15);
 var material = new THREE.MeshBasicMaterial({ map:texture });
 
 const world = new THREE.Mesh(geometry, material);
