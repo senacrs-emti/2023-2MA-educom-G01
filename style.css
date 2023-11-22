@@ -1,15 +1,29 @@
 body { 
     margin: 0; 
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .slider{
     position: absolute;
     
+
+
 }
-.aa{
+.h1{
     color: white;
     position: absolute;
+    margin-top: 42%;
+    font-size: 1.3em;
+    margin-left: 30%;
+}
+.h2{
+  color: white;
+  position: absolute;
+  margin-top: 42%;
+  font-size: 1.3em;
+  margin-left: 62%;
 }
 
 .slider {
@@ -22,8 +36,8 @@ body {
     -webkit-transition: .2s; 
     transition: opacity .2s;
     border-radius: 1em;
-    margin-top: 50em;
-    margin-left: 39em;
+    margin-top: 45%;
+    margin-left: 35%;
   }
   
  
