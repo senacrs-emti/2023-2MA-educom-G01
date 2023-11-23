@@ -63,3 +63,15 @@ body {
     position: absolute;
     color: white;
   }
+
+  .feedback{
+    position: absolute;
+    width: 5.8em;
+    border-radius: 10px;
+    background-color: #203451;
+    color: white;
+    font-size: 3em;
+    margin-top: 45%;
+    margin-left: 84%;
+    font-family: ost;
+}
