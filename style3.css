@@ -27,7 +27,7 @@ main {
 main h1{
     font-size: 1.2em;
     font-family: ost;
-    padding-left: 18%;
+    text-align: center;
 }
 main form{
     margin-top: 5%;
