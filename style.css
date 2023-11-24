@@ -8,14 +8,14 @@ body {
 .h1{
     color: white;
     position: absolute;
-    margin-top: 39%;
+    margin-top: 85vh;
     font-size: 1.3em;
     margin-left: 30%;
 }
 .h2{
   color: white;
   position: absolute;
-  margin-top: 39%;
+  margin-top: 85vh;
   font-size: 1.3em;
   margin-left: 62%;
 }
@@ -30,7 +30,7 @@ body {
     -webkit-transition: .2s; 
     transition: opacity .2s;
     border-radius: 1em;
-    margin-top: 42%;
+    margin-top: 90vh;
     margin-left: 34%;
     position: absolute;
     display: none;
@@ -55,7 +55,7 @@ body {
     color: white;
   }
 
-  h1{
+  #h1{
     position: absolute;
     color: white;
   }
