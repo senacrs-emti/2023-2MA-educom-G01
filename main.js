@@ -132,4 +132,3 @@ slider.onmouseup = function() {
       }
   }
 
-

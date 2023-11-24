@@ -1,32 +1,26 @@
 body { 
     margin: 0; 
     padding: 0;
-    overflow-x: hidden;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.slider{
-    position: absolute;
-    
-
-
-}
 .h1{
     color: white;
     position: absolute;
-    margin-top: 42%;
+    margin-top: 39%;
     font-size: 1.3em;
     margin-left: 30%;
 }
 .h2{
   color: white;
   position: absolute;
-  margin-top: 42%;
+  margin-top: 39%;
   font-size: 1.3em;
   margin-left: 62%;
 }
 
-.slider {
+#myRange {
     -webkit-appearance: none;  
     appearance: none;
     width: 30%; 
@@ -36,8 +30,10 @@ body {
     -webkit-transition: .2s; 
     transition: opacity .2s;
     border-radius: 1em;
-    margin-top: 45%;
-    margin-left: 35%;
+    margin-top: 42%;
+    margin-left: 34%;
+    position: absolute;
+    display: none;
   }
   
  
@@ -63,7 +59,6 @@ body {
     position: absolute;
     color: white;
   }
-
   .feedback{
     position: absolute;
     width: 5.8em;
@@ -75,3 +70,6 @@ body {
     margin-left: 80%;
     font-family: ost;
 }
+  .h1, .h2{
+    display: none;
+  }
