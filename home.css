@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hover:hover{
+    outline: solid 2px rgb(210, 210, 210);
+}
+
+#backHomeBtn{
+    padding: 1vh 1vw;
+    display: none;
+    position: absolute;
+    margin-left: 90vw;
+    width: 7vw;
+    background-color: #203451;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 3vh;
+    border-radius: 10px;
+    border: hidden;
+    font-family: 'Cormorant SC', serif;
+}
+
+#origemTerra{
+    padding: 1vh 1vw;
+    display: none;
+    position: absolute;
+    margin-left: 90vw;
+    width: 7vw;
+    background-color: #203451;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 10vh;
+    border-radius: 10px;
+    border: hidden;
+    font-family: 'Cormorant SC', serif;
+}
+
+#sobreEra{
+    padding: 1vh 1vw;
+    display: none;
+    position: absolute;
+    margin-left: 90vw;
+    width: 7vw;
+    background-color: #203451;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 25vh;
+    border-radius: 10px;
+    border: hidden;
+    font-family: 'Cormorant SC', serif;
+}
+
+#title{
+    color: white;
+    position: absolute;
+    font-family: 'Cormorant SC', serif;
+    font-size: 4.5rem;
+    width: 100%;
+    padding: 3vh 1vh 1vh 35vw;
+    letter-spacing: 0.1em;
+    margin-top: 0;
+}
+
+nav{
+    position: absolute;
+    margin-top: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav #startBtnHome{
+    color: white;
+    background-color: #3E5730;
+    width: 15vw;
+    font-size: 2rem;
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    height: 10vh;
+    border: hidden;
+    border-radius: 15px;
+}
+
+ .smallBtn{
+    background-color: #203451;
+    border: hidden;
+    width: 15vw;
+    font-size: 1.5rem;
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 0.1vw;
+    color: white;
+    border-radius: 15px;
+    height: 7vh;
+    margin-top: 2.5vh;
+}
+
+#origemTerraInformations{
+    overflow-y: scroll;
+    display: none;
+    padding: 2%;
+    align-self: center;
+    background-color: #203451e4;
+    width: 50vw;
+    height: 50vh;
+    color: rgb(226, 226, 226);
+    position: absolute;
+    margin-top: 10vh;
+    border-radius: 10px;
+}
+#origemTerraInformations::-webkit-scrollbar{
+    display: none;
+}
+#origemTerraInformations h1{
+    margin-top: 0;
+}
+#origemTerraInformationsVoltar{
+    background-color: #3E5730;
+    border: none;
+    padding: 1vh 1vw ;
+    border-radius: 10px;
+    color: rgb(226, 226, 226);
+}
+
+#sobreEraInformations{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    padding: 3vh 1.5vw;
+    width: 23vw;
+    height: 84vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    background-color: #203451e4;
+    color: rgb(226, 226, 226);
+    overflow-y: scroll;
+}
+#sobreEraInformations::-webkit-scrollbar{
+    display: none;
+}
+
+#sobreEraInformationsVoltar{
+    background-color: #3E5730;
+    border: none;
+    padding: 1vh 1vw ;
+    border-radius: 10px;
+    color: rgb(226, 226, 226);
+}
+
+#sobreEraInformations h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 1.5em;
+}
+
+#sobreEraInformations p{
+    text-indent: 1vw;
+    margin-top: 0;
+    margin-bottom: 1.5vh;
+    font-family: 'Old Standard TT', serif;
+    
+}
+.feedback{
+    padding: 1vh 1vw;
+    display: none;
+    position: absolute;
+    margin-left: 90vw;
+    width: 7vw;
+    background-color: #203451;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 36.5vh;
+    border-radius: 10px;
+    border: hidden;
+    font-family: 'Cormorant SC', serif;
+}
