@@ -2,37 +2,58 @@
 <html>
 	<head lang="en">
 		<meta charset="utf-8">
-		<title>My first three.js app</title>
+		<title>Old Earth</title>
 		<link rel="stylesheet" href="style.css">
 	 	<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="responsiveCss.css">
 	</head>
 	<body>
-		<button class="hover" id="backHomeBtn">Voltar</button>
-		<button class="hover" id="origemTerra">Origem da Terra</button>
-		<button class="hover" id="sobreEra">Sobre a era</button>
-		<span id="homeBody">
-			<p id="title">Old Earth</p>
-			<nav>
-				<button href="" class="smallBtn hover">DOC</button>
-				<button class="hover" id="startBtnHome">INICIAR</button>
-				<button href="" class="smallBtn hover">CRÉDITOS</button>
-			</nav>
-		</span>
-		<a href="http://localhost:8080/2023-2MA-educom-G01/review/bancodedados.html"><button class="feedback">FEEDBACK</button></a>
+		<div id="container">
+			<!-- Home Page - homePage -->
+			<section id="homeBody">
+				<p id="title">Old Earth</p>
+				<nav id="homePageNav">
+					<button class="hover" id="startBtnHome">INICIAR</button>
+				</nav>
+			</section>
+			<!-- |End| Home Page - homePage -->
+			
+			<!-- Navegation Page - navPage -->
+			<section id="navPage">
+				<span id="rowActionButtonsNavPage" class="row">
+					<nav id="actionButtonsNavPage">
+						<button class="hover" id="backHomeBtn">Voltar</button>
+						<button class="hover" id="origemTerra">Origem da Terra</button>
+						<button class="hover" id="sobreEra">Sobre a era</button>
+						<a href="http://localhost:8080/2023-2MA-educom-G01-main/review/bancodedados.html"><button id="feedback" class="feedback hover">Avaliar</button></a>
+					</nav>
+				</span>
+				<div id="sliderNavPage">
+					<span id="rowSliderNavPage" class="row">
+						<h1 class="sliderTimeNavPage" id="sliderTimeNavPage">4,57 Billion</h1>
+						<h1 class="sliderTimeNavPage" id="sliderTime2NavPage">Today</h1>
+					</span>
+					<input type="range" min="1" max="80" value="80" class="slider" id="myRange">
+				</div>
+			</section>
+			<!-- |End| Navegation Page - navPage -->
+
+		</div>
 		<span id="origemTerraInformations">
 			<h1>Origem da terra</h1>
 			<p><b>Vida veio do Espaço:</b> Com a hipótese da geração espontânea refutada, outra teoria ganhou força. A de que algumas moléculas importantes para a vida podem ter sido produzidas fora da Terra e que chegaram ao planeta de carona em meteoritos ou cometas.  
 				Existem evidências que suportam essa teoria. Segundo a Universidade de Chicago, pesquisas do Centro de Pesquisa Ames da Nasa, publicaram investigações mostrando que compostos orgânicos complexos eram facilmente produzidos em condições similares às que existiam, provavelmente, no início do sistema solar. 
 		 	</p>
-			<p><b>Sopa Primordial:</b> Por fim, uma das teorias mais aceitas para a origem da vida atualmente é que os primeiros seres surgiram pela ação de processos químicos possibilitados pelas condições da Terra primitiva.  </p>
+			<p><b>Vida veio do Espaço:</b> Com a hipótese da geração espontânea refutada, outra teoria ganhou força. A de que algumas moléculas importantes para a vida podem ter sido produzidas fora da Terra e que chegaram ao planeta de carona em meteoritos ou cometas.</p>
+			<p>Existem evidências que suportam essa teoria. Segundo a Universidade de Chicago, pesquisas do Centro de Pesquisa Ames da Nasa, publicaram investigações mostrando que compostos orgânicos complexos eram facilmente produzidos em condições similares às que existiam, provavelmente, no início do sistema solar. </p>
+			<p><b>Sopa Primordial:</b>Por fim, uma das teorias mais aceitas para a origem da vida atualmente é que os primeiros seres surgiram pela ação de processos químicos possibilitados pelas condições da Terra primitiva.  </p>
+			<p>Na década de 1920, o químico Oparin e o cientista Haldane, de maneira levantaram hipóteses com base nas experiencias de Wöhler. Os estudiosos supunham que a atmosfera primitiva da Terra era um ambiente em que não havia gás oxigênio (02) nem gás nitrogênio (N2), mas continha muitos elétrons livres. Essa atmosfera seria composta de metano (CH4) amônia (NH3), hidrogênio e vapor de água (H20). </p>
+			<p>À medida que a Terra esfriava, chuvas intensas e descargas elétricas agiam sobre moléculas simples na atmosfera, formando compostos orgânicos. Esses compostos eram levados pela água da chuva para a crosta, onde se acumulavam sobre as rochas, reagindo e se tornando mais complexos. Com a redução da temperatura, a água líquida se acumulou, formando mares e oceanos. A "sopa primitiva" nos primeiros oceanos é sugerida como o possível berço da vida, como referido por Haldane. </p>
 			<button class="hover" id="origemTerraInformationsVoltar">Voltar</button>
 		</span>
 		<span id="sobreEraInformations">
-
+			<div><h1>Atual</h1><p>A terra ainda está na era cenozoica, mas as massas de terras constantemente se mechem, nesse modelo vemos a formação continental atual.</p></div><button class="hover" id="sobreEraInformationsVoltar">Voltar</button>
 		</span>
-		<h1 class="h1" id="h1">4,57 Billion</h1>
-		<h1 class="h2" id="h2">Today</h1>
-		<input type="range" min="1" max="80" value="80" class="slider" id="myRange">
 		<canvas id="webgl"></canvas>
 		<script type="module" src="/main.js"></script>
 		<script src="home.js"></script>
